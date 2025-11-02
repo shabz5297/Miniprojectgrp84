@@ -11,7 +11,7 @@ create table takes (
   CONSTRAINT fk_takes_section
   FOREIGN KEY (section,id) references sections(section_id),
 
-  UNIQUE KEYuq_student_section (student_id, section_id)
+  UNIQUE KEY uq_student_section (student_id, section_id)
 
 insert into takes (student_id, section_id, grade)
 VALUES (1,1,'A')
