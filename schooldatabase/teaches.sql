@@ -8,7 +8,7 @@ create table teaches (
 CONSTRAINT fk_teaches_instructor
   FOREIGN KEY (instructor_id) REFERENCES instructor(instructor_id)
   CONSTRAINT fk_teaches_section
-  FOREIGN KEY (section_id) REFERENCES section(section_id),
+  FOREIGN KEY (section_id) REFERENCES sections(section_id),
 
 UNIQUE KEY uq_teaches (instructor_id, section_id)
 
