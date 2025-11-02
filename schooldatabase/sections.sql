@@ -1,7 +1,7 @@
 USE schooldatabase;
 
 CREATE TABLE sections(
-  section_ID INTEGER(6),
+  section_id INTEGER(6),
   classroom VARCHAR(20),
   time_id INTEGER,
   PRIMARY KEY(section_ID),
