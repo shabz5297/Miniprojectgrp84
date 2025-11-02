@@ -8,5 +8,5 @@ FOREIGN KEY (dept_id) REFERENCES
 department(dept_id)
 );
 
-Insert into instructor values
-('1123456', 'john_doe', '100,000', 'Science');
+Insert into instructor (intructor_ID, full_name, annual_salary, dept_id)
+VALUES ('1123456', 'john_doe', '100,000', 'Science');
