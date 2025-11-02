@@ -1,6 +1,6 @@
 use schooldatabase;
 CREATE table student (
-student_ID INTEGER PRIMARY KEY,
+student_id INTEGER PRIMARY KEY,
 full_name VARCHAR(20),
 total_credits INTEGER,
 enrolled_course VARCHAR(20),
