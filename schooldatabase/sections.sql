@@ -1,12 +1,16 @@
 USE schooldatabase;
 
 CREATE TABLE sections(
-  section_id INTEGER(6),
-  classroom VARCHAR(20),
-  time_id INTEGER,
-  PRIMARY KEY(section_ID),
+  section_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  classroom_id INT NOT NULL,
+  course_id INT NOT NULL,
+  time_id INTEGER NOT NULL
   FOREIGN KEY (time_id) REFERENCES timeslot(time_id)
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+  FOREIN KEY (classroom_id) REFERENCES classroom(classroom_id)
+  
   );
 
-INSERT INTO sections VALUES(12345, 'Sir Bob Brugges', 1);
+INSERT INTO sections (section_id, classroom, time_id
+VALUES(12345, 'Sir Bob Brugges', 1);
 
