@@ -1,10 +1,12 @@
 use schooldatabase;
 
 CREATE TABLE classroom(
-  building_name VARCHAR(20),
-  room_number INTEGER,
-  seat_capacity INTEGER,
-  PRIMARY KEY(building_name, room_number)
+  classroom_id INT AUTO_INCREMENT PRIMARY KEY,
+  building_name VARCHAR(50) NOT NULL,
+  room_number INTEGER NOT NULL,
+  seat_capacity INTEGER NOT NULL CHECK (seat_capacity > 0),
+  UNIQUE KEY uq_room (building_name, room_number)
   );
 
-INSERT INTO classroom VALUES('Percey Gee', 4, 300)
+INSERT INTO classroom (building_name, room_number, seat_capacity)
+VALUES ('Percey Gee', 4, 300)
