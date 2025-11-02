@@ -15,3 +15,5 @@ create table takes (
 
 insert into takes (student_id, section_id, grade)
 VALUES (1,1,'A')
+
+/* idk if this is completely right but have a look and change if needed */
