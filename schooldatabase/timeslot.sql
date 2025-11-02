@@ -9,4 +9,5 @@ PRIMARY KEY (time_ID)
 CHECK (end_time > start_time)
 );
 
-insert into timeslot values (1, 'monday', '10:00:00', '12:00:00')
+insert into timeslot (time_ID, day_slot, start_time, end_time)
+VALUES  (1, 'monday', '10:00:00', '12:00:00')
