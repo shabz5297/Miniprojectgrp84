@@ -14,3 +14,5 @@ UNIQUE KEY uq_teaches (instructor_id, section_id)
 
 insert into teaches (instructor_id, section_id)
 VALUES (1, 1);
+
+/* not sure if this is right */
