@@ -9,7 +9,7 @@ create table takes (
   CONSTRAINT fk_takes_student
   FOREIGN KEY (student_id) references student(student_id)
   CONSTRAINT fk_takes_section
-  FOREIGN KEY (section,id) references sections(section_id),
+  FOREIGN KEY (section_id) references sections(section_id),
 
   UNIQUE KEY uq_student_section (student_id, section_id)
 
