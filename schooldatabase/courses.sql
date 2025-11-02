@@ -7,7 +7,6 @@ CREATE TABLE courses(
   dept_id INTEGER NOT NULL,
   CONSTRAINT fk_courses_department
   FOREIGN KEY (dept_id) REFERENCES
-  ON UPDA
   department(dept_id)
   );
   
