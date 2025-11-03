@@ -14,6 +14,7 @@ create table takes (
   UNIQUE KEY uq_student_section (student_id, section_id)
 
 insert into takes (student_id, section_id, grade)
-VALUES (1,1,'A')
+VALUES (123456,1,'A')
 
-/* idk if this is completely right but have a look and change if needed */
+/* idk if this is completely right but have a look and change if needed 
+  yeah i changed the student id to 123456 because a student id of 1 doesnt exist in the student.sql something there needs to be the same*/
