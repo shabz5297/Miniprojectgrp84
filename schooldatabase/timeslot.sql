@@ -1,11 +1,10 @@
 use schooldatabase;
 
 CREATE TABLE timeslot(
-time_ID INTEGER
+time_ID INTEGER AUTO_INCREMENT PRIMARY KEY
 day_slot VARCHAR(16) NOT NULL,
 start_time TIME NOT NULL,
-end_time TIME NOT NULL
-PRIMARY KEY (time_ID)
+end_time TIME NOT NULL,
 CHECK (end_time > start_time)
 );
 
