@@ -3,9 +3,9 @@ use schooldatabase;
 CREATE TABLE courses(
   course_ID INTEGER AUTO_INCREMENT PRIMARY KEY,
   course_title VARCHAR(100) NOT NULL,
-  credit_value INTEGER NOT NULL CHECK(credit_value > 0)
+  credit_value INTEGER NOT NULL CHECK(credit_value > 0),
   dept_id INTEGER NOT NULL,
-  CONSTRAINT fk_courses_department,
+  CONSTRAINT fk_courses_department
   FOREIGN KEY (dept_id) REFERENCES
   department(dept_id)
   );
