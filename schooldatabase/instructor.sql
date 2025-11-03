@@ -9,4 +9,4 @@ department(dept_id)
 );
 
 Insert into instructor (full_name, annual_salary, dept_id)
-VALUES ('john_doe', 25000.00 '1');
+VALUES ('john_doe', 25000.00, '1');
