@@ -1,7 +1,7 @@
 -- database selection
-create database if not exists  schooldatabase;
+create database schooldatabase;
 use schooldatabase;
-create table if not exists department( -- table to store each university department
+create table department( -- table to store each university department
 department_id Integer primary key , -- department primary key
 name VARCHAR(100) not null -- department name
 );
