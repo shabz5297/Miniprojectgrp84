@@ -12,7 +12,7 @@ full_name VARCHAR(100) not null , -- instructors name
 department_id  integer, -- to link to department
 foreign key(department_id) references department(department_id));
 
-CREATE TABLE course -- Information about modules stored in course table
+Create tableE course -- Information about modules stored in course table
 (course_id  integer Primary key ,    -- pk for course records
 Title   VARCHAR(100) not null,   -- Course title
 credit_value integer not null , -- credit weighting
