@@ -114,7 +114,7 @@ From student as st
 where st.student_id not in (select student_id From takes) -- students that dont take a section meaning they dont appear in takes
 ;
 -- 4di)
-select -- Getting a students total grade points
+select -- getting a students total grade points
 sum(c.credit_value* g.points) as total_grade_points -- taking the product of grade points and  credits
 From takes as t -- table with the students grade from each section
 Join section as s on t.section_id = s.section_id -- linking the student to the section they take
